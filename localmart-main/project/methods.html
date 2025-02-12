@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Progress - FitWeb</title>
+    <link rel="stylesheet" href="css/methods.css">
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <div class="logo">FitWeb</div>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="track.html">Track Progress</a></li>
+                <li><a href="bmi.html">BMI Calculator</a></li>
+                <li><a href="landing2.html" class="btn-link">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+   
+    <section class="training-methods" id="training-methods">
+        <h2>Training Methods</h2>
+       
+        <div class="method" data-method="strength">
+            <h3>Strength Training</h3>
+            <p>Focus on building strength with specific workout splits.</p>
+        </div>
+        
+        <div class="method" data-method="muscle">
+            <h3>Muscle Building</h3>
+            <p>Enhance muscle growth with targeted splits and exercises.</p>
+        </div>
+       
+        <div class="method" data-method="cardio">
+            <h3>Cardio</h3>
+            <p>Improve heart health with endurance exercises.</p>
+        </div>
+        
+        <div class="method" data-method="hiit">
+            <h3>HIIT</h3>
+            <p>Burn fat efficiently with High-Intensity Interval Training.</p>
+        </div>
+       
+        <div class="method" data-method="flexibility">
+            <h3>Flexibility</h3>
+            <p>Enhance mobility and reduce stiffness with stretching routines.</p>
+        </div>
+    </section>
+
+    
+    <div class="modal-overlay" id="exercise-modal">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <div id="split-container">
+                <button class="split-button" data-split="bro">Bro Split</button>
+                <button class="split-button" data-split="ppl">Push-Pull-Legs</button>
+            </div>
+            <ul id="exercise-list"></ul>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+   
+    <script src="jss/methods.js"></script>
+</body>
+</html>

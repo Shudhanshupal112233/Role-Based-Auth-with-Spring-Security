@@ -1,0 +1,225 @@
+/* General Reset */
+html {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/283/009/non_2x/workout-at-gym-concept-in-flat-cartoon-design-man-doing-exercises-with-dumbbells-in-sports-club-doing-weightlifting-and-strength-training-at-gym-illustration-with-people-scene-background-vector.jpg");
+}
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  
+  color: #333;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #2d3b3c;
+  padding: 20px 0;
+}
+
+.header .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.header .nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.header .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header .nav-links .btn-link {
+  background-color:  #4CAF50;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;}
+
+section h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+
+.features {
+  padding: 2rem 0;
+  
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-item {
+  width: 30%;
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Classes Section */
+.classes {
+  
+  padding: 2rem 0;
+}
+
+.classes-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.class-item {
+  width: 30%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.class-item:hover {
+  transform: scale(1.05);
+}
+
+.class-item h3 {
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+}
+
+
+.trainers {
+  padding: 2rem 0;
+}
+
+.trainer-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.trainer-item {
+  width: 30%;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.trainer-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 5px solid #4CAF50;
+}
+
+.trainer-item h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Membership Section */
+.membership {
+  padding: 2rem 0;
+  
+}
+
+.membership-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.membership-item {
+  width: 30%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-item h3 {
+  color: #4CAF50;
+}
+
+/* Progress Section */
+.progress {
+  padding: 2rem 0;
+  background: #fff;
+  text-align: center;
+}
+
+.progress button {
+  background: #4CAF50;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.progress button:hover {
+  background: #3E8E41;
+}
+
+/* Popup Modal */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup button {
+  background: #4CAF50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.popup button:hover {
+  background: #3E8E41;
+}

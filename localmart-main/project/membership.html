@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitWeb - Membership Payment</title>
+    <link rel="stylesheet" href="css/membership.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <div class="logo">FitWeb Gym Membership</div>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="track.html">Track Progress</a></li>
+                
+                <li><a href="landing2.html" class="btn-link">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+ 
+    <section class="membership" id="membership">
+        <h2>Choose Your Plan</h2>
+        <div class="membership-options">
+            <div class="membership-option" onclick="selectPlan('Semesterwise', 600)">
+                <h3>semesterwise</h3>
+                <p>600rs/semester</p>
+            </div>
+            <div class="membership-option" onclick="selectPlan('yearly', 1200)">
+                <h3>yearly</h3>
+                <p>1200rs/year</p>
+            </div>
+            <div class="membership-option" onclick="selectPlan('halfsem', 300)">
+                <h3>for half sem</h3>
+                <p>300rs/3months</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="payment-section" style="display: none;">
+        <h2>Payment Information</h2>
+        <form id="paymentForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="cardNumber" placeholder="Card Number" required>
+            <input type="text" id="expDate" placeholder="Expiry Date (MM/YY)" required>
+            <input type="text" id="cvv" placeholder="CVV" required>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </section>
+
+  
+    <section id="receipt-section" style="display: none;">
+        <h2>Payment Receipt</h2>
+        <div id="receipt-details">
+            <p id="receipt-plan"></p>
+            <p id="receipt-name"></p>
+            <p id="receipt-email"></p>
+            <p id="receipt-amount"></p>
+        </div>
+        <button onclick="window.location.reload()">Return to Home</button>
+        <button onclick="downloadPDF()">Download Receipt as PDF</button>
+        <button onclick="downloadImage()">Download Receipt as Image</button>
+    </section>
+
+    
+
+    <script src="jss/membership.js"></script>
+</body>
+</html>

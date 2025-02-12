@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+     html{
+        background-image: url("https://static.vecteezy.com/system/resources/previews/005/283/009/non_2x/workout-at-gym-concept-in-flat-cartoon-design-man-doing-exercises-with-dumbbells-in-sports-club-doing-weightlifting-and-strength-training-at-gym-illustration-with-people-scene-background-vector.jpg");
+        height: 100vh;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-container h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+    .form-control input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .btn {
+      background: #4caf50; /* Green button */
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background: #388e3c; 
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: black;
+    }
+
+    .footer a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    form input:hover {
+    background-color: #fbfbfc; 
+    
+    border: 1px solid #000; 
+    cursor: pointer; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+}
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id ="login-Form">
+      <div class="form-control">
+        <input type="text" placeholder="Username or Email" name="userName" required>
+      </div>
+      <div class="form-control">
+        <input type="password" placeholder="Password" name="password" required>
+      </div>
+      <button type="submit" class="btn" onclick="">Log In</button>
+    </form>
+    <div class="footer">
+      <p>Don't have an account? <a href="hg.html">Sign up</a></p>
+     
+    </div>
+  </div>
+</body>
+<script>
+  function fun1(){ document.querySelector('#login-Form').addEventListener("submit", (e) => {
+    e.preventDefault();
+    const url = "http://localhost:8099/login"
+    const formData = new FormData(document.querySelector("#login-Form"))
+    const data = {
+      
+     username:formData.get("userName"),
+     password:formData.get("password"),
+     
+    }
+    fetch(url, {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json(); 
+      })
+      .then(data => {
+        console.log('Success:', data);
+        window.location.assign('landing.html');
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+
+
+  })
+
+
+  }
+  document.querySelector('#login-Form').addEventListener("submit", (e) => {
+    e.preventDefault();
+    const url = "http://localhost:8099/login"
+    const formData = new FormData(document.querySelector("#login-Form"))
+    const data = {
+      
+     username:formData.get("userName"),
+     password:formData.get("password"),
+     
+    }
+    fetch(url, {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json(); 
+      })
+      .then(data => {
+        console.log('Success:', data);
+        window.location.assign('landing.html');
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+
+
+  })
+
+
+
+</script>
+</html>

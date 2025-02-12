@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trainers - FitWeb</title>
+    <link rel="stylesheet" href="css/trainers.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">FitWeb</div>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="track.html">Track Progress</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                
+                <li><a href="landing2.html" class="btn-link">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+   
+    <section class="trainers">
+        <h2>Meet Our Trainers</h2>
+        <div class="trainer-grid">
+           
+            <div class="trainer-card" data-trainer="alex">
+                <img src="images/trainer1.jpg" alt="Alex Carter">
+                <h3>JJ</h3>
+                <p>Strength Training & Weightlifting Specialist</p>
+                <button class="more-info-btn">More Info</button>
+            </div>
+            
+            <div class="trainer-card" data-trainer="jessica">
+                <img src="images/trainer2.jpg" alt="Jessica Lee">
+                <h3>Kirti</h3>
+                <p>Yoga & Flexibility Expert</p>
+                <button class="more-info-btn">More Info</button>
+            </div>
+           
+            <div class="trainer-card" data-trainer="mark">
+                <img src="images/trainer3.jpg" alt="Mark Thompson">
+                <h3>Aditya</h3>
+                <p>HIIT & Cardio Coach</p>
+                <button class="more-info-btn">More Info</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <div class="modal-overlay" id="trainer-modal">
+        <div class="modal-content">
+            <h2 id="trainer-name"></h2>
+            <p id="trainer-details"></p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    
+
+    <script src="jss/trainers.js"></script>
+</body>
+</html>

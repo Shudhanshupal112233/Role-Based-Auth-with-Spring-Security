@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan - FitWeb</title>
+    <link rel="stylesheet" href="css/diet.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">FitWeb</div>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="bmi.html">BMI Calculator</a></li>
+                <li><a href="landing2.html" class="btn-link">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Diet Selection Section -->
+    <section class="diet-selection">
+        <div class="container">
+            <h2>Choose Your Diet Plan</h2>
+            <div class="training-programs">
+                <button data-program="cutting">Cutting</button>
+                <button data-program="gaining">Gaining</button>
+                <button data-program="fat-loss">Fat Loss</button>
+                <button data-program="intermittent-fasting">Intermittent Fasting</button>
+                <button data-program="caloric-surplus">Caloric Surplus</button>
+                <button data-program="caloric-deficit">Caloric Deficit</button>
+            </div>
+
+            <div class="diet-preferences">
+                <h3>Select Diet Preference</h3>
+                <select id="diet-select">
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="non-vegetarian">Non-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diet Plan Section -->
+    <section class="diet-details">
+        <div class="container">
+            <h2 id="diet-title">Diet Plan</h2>
+            <div id="diet-content"></div>
+        </div>
+    </section>
+<script src="jss/diet.js"></script>
+
+</body>
+</html>
+

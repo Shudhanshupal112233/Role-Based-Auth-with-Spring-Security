@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    text-align: center;
+   
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/283/009/non_2x/workout-at-gym-concept-in-flat-cartoon-design-man-doing-exercises-with-dumbbells-in-sports-club-doing-weightlifting-and-strength-training-at-gym-illustration-with-people-scene-background-vector.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one{
+    
+    height: 97vh;
+    width: max(40% 600px);
+    padding: 20px 30px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900px;
+    text-transform: uppercase;
+    margin-right: 40vw;
+    margin-top: 5vh;
+}
+form{
+    
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    margin-right: 40vw;
+
+}
+form > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form input{
+    box-sizing: border-box;
+    width: 350px;
+    min-width:0;
+    height: 38px;
+    padding: 1em;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+   border: rgb(21, 37, 53);
+    
+    
+}
+form input:hover {
+    background-color: #fbfbfc; 
+    
+    border: 1px solid #000; 
+    cursor: pointer; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+}
+
+form button{
+    margin-top: 10px;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+a{
+    text-decoration: none;
+    margin-top: 10px;
+    gap:10px;
+    color: rgb(4, 13, 109);
+
+}
+a:hover{
+    text-decoration: underline;
+
+}
+p{
+   font-size: 20px;
+   font-weight: bold;
+    margin-top: 10px;
+    margin-right: 40vw;
+
+}
+form button:hover {
+    background-color: #3498db; 
+    color: white; 
+    border: 1px solid #2980b9; 
+    cursor: pointer; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+}
+form select {
+    box-sizing: border-box;
+    width: 350px;
+    min-width:0;
+    height: 44px;
+    padding: 1em;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+   border: none;
+}
+
+img {
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    object-fit:fill; /* Ensures the image fits properly without distortion */
+  }
+  

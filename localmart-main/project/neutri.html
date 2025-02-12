@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Guide - FitWeb Gym</title>
+    <link rel="stylesheet" href="nutrition.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>FitWeb Nutrition Guide</h1>
+        <p>Your pathway to healthy eating and better fitness.</p>
+    </header>
+
+    <!-- Content Section -->
+    <main class="nutrition-guide">
+        <section class="intro">
+            <h2>Why Nutrition Matters?</h2>
+            <p>
+                A balanced diet is essential for achieving fitness goals, whether you're aiming to lose weight, gain muscle, or improve your overall health.
+            </p>
+        </section>
+
+        <!-- Diet Type Selection -->
+        <section class="diet-selection">
+            <label for="dietType">Select Diet Type:</label>
+            <select id="dietType" onchange="updateDietPlans()">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="nonVegetarian">Non-Vegetarian</option>
+            </select>
+        </section>
+
+        <!-- Meal Plan Section -->
+        <section class="meal-plans">
+            <h2>Sample Diet Plans</h2>
+            <div class="plans-grid" id="mealPlansGrid">
+                <!-- Diet plans will be injected here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 FitWeb Gym. Your health, our priority.</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popupModal" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h3 id="popupTitle">Diet Details</h3>
+            <ul id="popupDetails"></ul>
+        </div>
+    </div>
+
+    <script src="nutrition.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+html{
+    background-image: url('https://img.freepik.com/premium-vector/gym-interior-banner-flat-cartoon-design-sports-center-with-machines-barbell-dumbbells-ball-healthy-lifestyle-workout-weightlifting-fitness-concept-vector-illustration-web-background_198565-1038.jpg?w=740');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #2d3b3c;
+    padding: 20px 0;
+}
+
+.header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.header .nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header .nav-links .btn-link {
+    background-color:  #4CAF50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.membership {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.membership h2 {
+    font-size: 28px;
+}
+
+.membership-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.membership-option {
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.membership-option:hover {
+    transform: scale(1.1);
+}
+
+.membership-option h3 {
+    font-size: 24px;
+}
+
+.membership-option p {
+    font-size: 20px;
+    color: #4CAF50;
+}
+
+/* Payment Section */
+#payment-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#payment-section input {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+#payment-section button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#payment-section button:hover {
+    background-color: #45a049;
+}
+
+/* Receipt Section */
+#receipt-section {
+    text-align: center;
+    margin-top: 20px;
+    
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#receipt-details p {
+    font-size: 20px;
+    color: #333;
+}
+
+#receipt-section button {
+    background-color: #007BFF;
+    margin-top: 10px;
+}
+
+#receipt-section button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

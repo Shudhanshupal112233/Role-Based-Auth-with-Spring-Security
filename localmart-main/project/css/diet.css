@@ -1,0 +1,179 @@
+/* General Styles */
+html{
+    background-image: url('https://thumbs.dreamstime.com/z/diet-plan-concept-planning-healthy-lifestyle-vector-illustration-flat-design-sports-equipment-studying-healthy-foods-97709282.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #2d3b3c;
+    padding: 20px 0;
+}
+
+.header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.header .nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header .nav-links .btn-link {
+    background-color: #ff6f61;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header .nav-links .btn-link:hover {
+    background-color: #e05a4f;
+}
+
+/* Diet Selection Section */
+.diet-selection {
+  
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diet-selection h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+
+.training-programs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.training-programs button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.training-programs button:hover {
+    background-color: #45a049;
+}
+
+.diet-preferences {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.diet-preferences h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.diet-preferences select {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+/* Diet Details Section */
+.diet-details {
+    padding: 40px 0;
+}
+
+.diet-details h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+
+.diet-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.diet-details li {
+    margin-bottom: 20px;
+}
+
+.diet-details ul ul {
+    margin-top: 10px;
+}
+
+.diet-details li strong {
+    font-size: 20px;
+    color: #333;
+}
+
+.diet-details li ul li {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #2d3b3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .diet-selection h2, .diet-details h2 {
+        font-size: 24px;
+    }
+
+    .training-programs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .training-programs button {
+        margin-bottom: 10px;
+    }
+
+    .diet-preferences select {
+        width: 100%;
+    }
+}

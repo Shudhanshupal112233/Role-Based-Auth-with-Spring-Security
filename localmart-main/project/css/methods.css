@@ -1,0 +1,226 @@
+html{
+    background-image: url('https://img.freepik.com/premium-vector/fitness-people-training_18591-59034.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #2d3b3c;
+    padding: 20px 0;
+}
+
+.header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.header .nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header .nav-links .btn-link {
+    background-color:  #4CAF50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;}
+
+.hero {
+    background-color:  #45a049;
+    
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.cta-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #45a049; 
+}
+
+
+.training-methods {
+
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.training-methods h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.method {
+    display: inline-block;
+    background-color:  #45a049;
+    color: #fff;
+    padding: 20px 30px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.method:hover {
+    transform: scale(1.1);
+}
+
+.method h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.method p {
+    font-size: 16px;
+}
+
+#split-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.split-button {
+    background-color: #4CAF50; /* Naive Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.split-button:hover {
+    background-color: #45a049; }
+
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#exercise-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+#exercise-list li {
+    margin-bottom: 10px;
+}
+
+#close-modal {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#close-modal:hover {
+    background-color: #45a049; 
+}
+
+
+.footer {
+    background-color:  #45a049;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .method {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}

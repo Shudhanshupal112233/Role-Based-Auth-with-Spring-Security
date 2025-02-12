@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bmi.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">FitWeb</div>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="track.html">Track Progress</a></li>
+                <li><a href="landing2.html" class="btn-link">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to FitWeb</h1>
+        <p>Your journey to fitness starts here!</p>
+        <button class="cta-btn" id="bmi-button">Calculate BMI</button>
+    </section>
+    
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup">
+            <button class="close-btn" id="close-popup">&times;</button>
+            <h2>BMI Calculator</h2>
+            <form id="bmi-form">
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter your weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="Enter your height" required>
+                </div>
+                <button type="submit" class="form-btn">Calculate</button>
+            </form>
+            <p id="bmi-result"></p>
+        </div>
+    </div>
+    
+    <script src="jss/bmi.js"></script>
+</body>
+</html>

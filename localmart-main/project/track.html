@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Progress - FitWeb</title>
+    <link rel="stylesheet" href="css/progress.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">FitWeb</div>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="methods.html" class="active">Training Methods</a></li>
+                <li><a href="landing2.html" >Logout</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+   
+    <section class="track-progress">
+        <h1>Track Your Fitness Progress</h1>
+        <p>Log your activities, track muscle growth, and explore training methods.</p>
+
+       
+        <div class="log-activity">
+            <h2>Log Your Activity</h2>
+            <form id="log-form">
+                <input type="date" id="log-date" required>
+                <input type="text" id="activity" placeholder="Activity (e.g., Squats)" required>
+                <input type="number" id="duration" placeholder="Duration (minutes)" required>
+                <button type="submit">Log Activity</button>
+            </form>
+        </div>
+        
+        <div class="progress-chart">
+            <h2>Your Activity Progress</h2>
+            <canvas id="progressChart"></canvas>
+        </div>
+
+        
+        <div class="muscle-tracker">
+            <h2>Muscle Building Progress</h2>
+            <form id="muscle-form">
+                <input type="text" id="muscle-group" placeholder="Muscle Group (e.g., Chest)" required>
+                <input type="number" id="muscle-growth" placeholder="Size Increase (cm)" required>
+                <button type="submit">Track Muscle Growth</button>
+            </form>
+            <div id="muscle-growth-list"></div>
+        </div>
+
+        <div class="training-methods">
+            <h2>Explore Training Methods</h2>
+            <div class="method">
+                <h3>Strength Training</h3>
+                <p>Focus on lifting heavier weights with lower repetitions for building strength.</p>
+            </div>
+            <div class="method">
+                <h3>Hypertrophy Training</h3>
+                <p>Perform moderate weightlifting with 6-12 repetitions to increase muscle size.</p>
+            </div>
+            <div class="method">
+                <h3>Cardio Workouts</h3>
+                <p>Boost endurance and cardiovascular health through activities like running and cycling.</p>
+            </div>
+            <div class="method">
+                <h3>High-Intensity Interval Training (HIIT)</h3>
+                <p>Short bursts of intense activity followed by rest to maximize calorie burn.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="jss/progress.js"></script>
+</body>
+</html>
